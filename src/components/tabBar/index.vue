@@ -1,0 +1,48 @@
+<template>
+    <footer id="footer" >
+        <ul>
+            <router-link tag='li' to='/movie' >
+                <i class="icon iconfont icon-dianying" ></i>
+                <p>电影</p>
+            </router-link>
+            <router-link tag='li' to='/cinema'>
+                <i class="icon iconfont icon-huabankaobei"></i>
+                <p>影院</p>
+            </router-link>
+            <router-link tag='li' to='/center'>
+                <i class="icon iconfont icon-wode1"></i>
+                <p>我的</p>
+            </router-link>
+        </ul>
+
+    </footer>
+</template>
+
+<script>
+export default {
+    name:'tabbar'
+}
+</script>
+
+<style scoped>
+#footer{
+    width: 100%;height:50px;background: white;border-top: 2px solid #ebe8e3;position: fixed;left: 0;bottom: 0;
+}
+#footer ul {
+    display: flex;text-align: center;height: 50px;align-items: center;
+}
+#footer ul li {
+    flex:1;height:40px;list-style: none;
+}
+#footer ul i{
+    font-size: 20px;
+}
+#footer ul p{
+    font-size: 12px;
+    line-height: 18px;
+}
+#footer ul li.router-link-active{
+    color: #f03d37;
+}
+
+</style>
