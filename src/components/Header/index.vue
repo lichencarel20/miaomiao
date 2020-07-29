@@ -30,5 +30,8 @@ export default {
     width: 100%;
     height: 52px;
 }
+#header2{
+    width: 100%;height: 50px;color: white;background: #e54847;border-bottom:2px solid #e54847;
+}
 
 </style>

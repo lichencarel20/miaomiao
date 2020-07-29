@@ -16,8 +16,6 @@
                         特色<i class="icon iconfont icon-drop-down"></i>
                 </div>
             </div>
-
-
             <CiList></CiList>
             <tabBar></tabBar>
         </div>
