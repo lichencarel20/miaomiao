@@ -1,14 +1,12 @@
 <template>
-    <div>
+   
         <div>
             <Header title="喵喵影院"></Header>
 
             <div id="content">
-                
-                    <div class="city_switch">
-                        全城<i class="icon iconfont icon-drop-down"></i>
-                    </div>
-        
+                <div class="city_switch">
+                    全城<i class="icon iconfont icon-drop-down"></i>
+                </div>
                 <div class="brand_switch">
                         品牌<i class="icon iconfont icon-drop-down"></i>
                 </div>
@@ -16,12 +14,13 @@
                         特色<i class="icon iconfont icon-drop-down"></i>
                 </div>
             </div>
+            <div id="span"></div>
             <CiList></CiList>
             <tabBar></tabBar>
         </div>
         
         
-    </div>
+    
 </template>
 
 <script>
@@ -38,7 +37,10 @@ export default {
 </script>
 
 <style  scoped>
+
     #content{
+        width: 100%;
+        position: fixed;
         border-bottom: 2px solid  whitesmoke ;
         height: 40px;
         line-height: 40px;
@@ -46,23 +48,12 @@ export default {
         display: flex;
         align-content: center;
         justify-content: space-around;
+        background: white;
     }
     #content div{
-        width: 100px;
+        flex: 1;
     }
-    /* #content div{
-        width: 70px;
+    #span{
+        height: 42px;
     }
-    .city_switch{
-        float: left;
-    }
-    .feature_switch{
-        float:left;
-    }
-    .brand_switch{
-        float: left;
-    }
-    .clear{
-        clear: both;
-    } */
 </style>

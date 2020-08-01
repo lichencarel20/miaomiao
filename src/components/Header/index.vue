@@ -1,7 +1,10 @@
 <template>
     <div>
         <header id="header" >
-         <h1>{{title}}</h1>    
+        <div class="slot">
+            <slot/>
+        </div>
+         <h1> {{title}}</h1>    
         </header>
         <div class="space" />
     </div>
@@ -24,14 +27,15 @@ export default {
     width: 100%;height: 50px;color: white;background: #e54847;border-bottom:2px solid #e54847;position: fixed;left: 0px;top: 0px;
 }
 #header h1{
-    font-size: 18px;text-align: center;line-height: 50px;font-weight: normal;
+    font-size: 18px;text-align: center;line-height: 50px;font-weight: normal;width: 100%;
 }
 .space{
     width: 100%;
     height: 52px;
 }
-#header2{
-    width: 100%;height: 50px;color: white;background: #e54847;border-bottom:2px solid #e54847;
+#header .slot{
+    width:50px;
+    position: absolute;
+    top: 14.5px;
 }
-
 </style>

@@ -14,7 +14,7 @@
                 <p>我的</p>
             </router-link>
         </ul>
-
+        <div id="kong"></div>
     </footer>
 </template>
 
@@ -44,5 +44,7 @@ export default {
 #footer ul li.router-link-active{
     color: #f03d37;
 }
-
+#kong{
+    height: 52px;
+}
 </style>

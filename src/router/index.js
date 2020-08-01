@@ -32,6 +32,7 @@ Vue.use(VueRouter)
       },
       {
         path:'comingSoon',
+        name:'ComingSoon',
         component:()=>import('@/components/Comingsoon')
       },
       {
@@ -45,6 +46,11 @@ Vue.use(VueRouter)
     path:'/cinema',
     name:'Cinema',
     component:() => import('../views/cinema/index.vue')
+  },
+  {
+    path:'/detail:id', //动态路径参数，以冒号开头
+    component:()=>import('@/components/Detail')
+    
   },
   {
     path:'/center',
@@ -65,3 +71,8 @@ const router = new VueRouter({
 })
 
 export default router
+
+/* const originalPush = VueRouter.prototype.push
+   VueRouter.prototype.push = function push(location) {
+   return originalPush.call(this, location).catch(err => err)
+} */
